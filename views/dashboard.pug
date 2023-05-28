@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+
+  head
+    title= 'Node.js Template'
+    link(rel='stylesheet', href='/index2.css')
+  body
+    h1 "Admin Dashboard"
+    table
+      thead 
+        tr 
+         th id 
+         th userName
+         th userAge 
+      each element in data
+        tr
+          td  #{element.id} 
+          td #{element.userName} 
+          td  #{element.userAge}
